@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO8/PROPIO8.xst" -ofn "D:/workdirectory/PROPIO8/PROPIO8.syr" 

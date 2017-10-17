@@ -1,0 +1,31 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/workdirectory/PROPIO14/PROPIO14TB_isim_translate.exe -prj D:/workdirectory/PROPIO14/PROPIO14TB_translate.prj work.PROPIO14TB 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/workdirectory/PROPIO14/netgen/translate/PROPIO14_translate.vhd" into library work
+Parsing VHDL file "D:/workdirectory/PROPIO14/PROPIO14TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 122704 KB
+Fuse CPU Usage: 2371 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_lut3_v of entity X_LUT3 [\X_LUT3(true,true,"UNPLACED",(0,...]
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity PROPIO14 [propio14_default]
+Compiling architecture behavior of entity propio14tb
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 20 VHDL Units
+Built simulation executable D:/workdirectory/PROPIO14/PROPIO14TB_isim_translate.exe
+Fuse Memory Usage: 148160 KB
+Fuse CPU Usage: 4117 ms

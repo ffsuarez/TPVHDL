@@ -1,0 +1,28 @@
+Command line:
+   PROPIO8_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49210
+
+Fri Oct 06 17:51:28 2017
+
+
+ Elaboration Time: 1.07641 sec
+
+ Current Memory Usage: 1182.47 Meg
+
+ Total Signals          : 11
+ Total Nets             : 7
+ Total Signal Drivers   : 6
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 4
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 368
+
+ Total Simulation Time: 1.21681 sec
+
+ Current Memory Usage: 710.59 Meg
+
+Sat Oct 07 15:05:47 2017
+

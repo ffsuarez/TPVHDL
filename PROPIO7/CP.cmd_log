@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO7/CP.xst" -ofn "D:/workdirectory/PROPIO7/CP.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO7/CP.xst" -ofn "D:/workdirectory/PROPIO7/CP.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO7/CP.xst" -ofn "D:/workdirectory/PROPIO7/CP.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO7/CP.xst" -ofn "D:/workdirectory/PROPIO7/CP.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO7/CP.xst" -ofn "D:/workdirectory/PROPIO7/CP.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO7/CP.xst" -ofn "D:/workdirectory/PROPIO7/CP.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO7/CP.xst" -ofn "D:/workdirectory/PROPIO7/CP.syr" 
+netgen -intstyle ise -ar Structure -tm CP -w -dir netgen/synthesis -ofmt vhdl -sim CP.ngc CP_synthesis.vhd 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO7/CP.xst" -ofn "D:/workdirectory/PROPIO7/CP.syr" 
+netgen -intstyle ise -ar Structure -tm CP -w -dir netgen/synthesis -ofmt vhdl -sim CP.ngc CP_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 CP.ngc CP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o CP_map.ncd CP.ngd CP.pcf 
+par -w -intstyle ise -ol high -mt off CP_map.ncd CP.ncd CP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml CP.twx CP.ncd -o CP.twr CP.pcf 
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm CP -w -dir netgen/translate -ofmt vhdl -sim CP.ngd CP_translate.vhd 

@@ -1,0 +1,30 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/workdirectory/PROPIO17/p17tb_isim_translate.exe -prj D:/workdirectory/PROPIO17/p17tb_translate.prj work.p17tb 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/workdirectory/PROPIO17/netgen/translate/PROPIO17_translate.vhd" into library work
+Parsing VHDL file "D:/workdirectory/PROPIO17/p17tb.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 122320 KB
+Fuse CPU Usage: 2183 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity PROPIO17 [propio17_default]
+Compiling architecture behavior of entity p17tb
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 18 VHDL Units
+Built simulation executable D:/workdirectory/PROPIO17/p17tb_isim_translate.exe
+Fuse Memory Usage: 149184 KB
+Fuse CPU Usage: 3884 ms

@@ -1,0 +1,2 @@
+vhdl isim_temp "PROPIO18.vhd"
+vhdl isim_temp "propio18tb.vhd"

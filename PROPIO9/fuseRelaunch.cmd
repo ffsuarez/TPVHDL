@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/workdirectory/PROPIO9/PROPIO9_TB_isim_translate.exe" -prj "D:/workdirectory/PROPIO9/PROPIO9_TB_translate.prj" "work.PROPIO9_TB" 

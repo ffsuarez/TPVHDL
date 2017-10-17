@@ -1,0 +1,28 @@
+Command line:
+   PROPIO16_TB_isim_translate.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  49495
+
+Sun Oct 15 20:23:01 2017
+
+
+ Elaboration Time: 1.09201 sec
+
+ Current Memory Usage: 1182.65 Meg
+
+ Total Signals          : 431
+ Total Nets             : 268
+ Total Signal Drivers   : 229
+ Total Blocks           : 126
+ Total Primitive Blocks : 66
+ Total Processes        : 226
+ Total Traceable Variables  : 631
+ Total Scalar Nets and Variables : 7004
+
+ Total Simulation Time: 1.29481 sec
+
+ Current Memory Usage: 710.779 Meg
+
+Sun Oct 15 20:25:27 2017
+

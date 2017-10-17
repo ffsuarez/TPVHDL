@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO14/PROPIO14.xst" -ofn "D:/workdirectory/PROPIO14/PROPIO14.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 PROPIO14.ngc PROPIO14.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm PROPIO14 -w -dir netgen/translate -ofmt vhdl -sim PROPIO14.ngd PROPIO14_translate.vhd 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO14/PROPIO14.xst" -ofn "D:/workdirectory/PROPIO14/PROPIO14.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO14/PROPIO14.xst" -ofn "D:/workdirectory/PROPIO14/PROPIO14.syr" 

@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO15/PROPIO15.xst" -ofn "D:/workdirectory/PROPIO15/PROPIO15.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO15/PROPIO15.xst" -ofn "D:/workdirectory/PROPIO15/PROPIO15.syr" 

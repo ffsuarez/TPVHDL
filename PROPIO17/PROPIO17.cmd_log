@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 PROPIO17.ngc PROPIO17.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm PROPIO17 -w -dir netgen/translate -ofmt vhdl -sim PROPIO17.ngd PROPIO17_translate.vhd 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 PROPIO17.ngc PROPIO17.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm PROPIO17 -w -dir netgen/translate -ofmt vhdl -sim PROPIO17.ngd PROPIO17_translate.vhd 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO17/PROPIO17.xst" -ofn "D:/workdirectory/PROPIO17/PROPIO17.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 PROPIO17.ngc PROPIO17.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm PROPIO17 -w -dir netgen/translate -ofmt vhdl -sim PROPIO17.ngd PROPIO17_translate.vhd 

@@ -1,0 +1,21 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/workdirectory/PROPIO8/PROPIO8_TB_isim_beh.exe" -prj "D:/workdirectory/PROPIO8/PROPIO8_TB_beh.prj" "work.PROPIO8_TB" 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/workdirectory/PROPIO8/PROPIO8.vhd" into library work
+Parsing VHDL file "D:/workdirectory/PROPIO8/PROPIO8_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 104912 KB
+Fuse CPU Usage: 1122 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity PROPIO8 [propio8_default]
+Compiling architecture behavior of entity propio8_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable D:/workdirectory/PROPIO8/PROPIO8_TB_isim_beh.exe
+Fuse Memory Usage: 113856 KB
+Fuse CPU Usage: 1325 ms

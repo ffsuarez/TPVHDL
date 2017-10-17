@@ -1,0 +1,2 @@
+vhdl work "netgen/translate/PROPIO14_translate.vhd"
+vhdl work "PROPIO14TB.vhd"

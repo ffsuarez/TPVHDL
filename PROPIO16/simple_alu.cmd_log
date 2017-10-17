@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO16/simple_alu.xst" -ofn "D:/workdirectory/PROPIO16/simple_alu.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO16/simple_alu.xst" -ofn "D:/workdirectory/PROPIO16/simple_alu.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO16/simple_alu.xst" -ofn "D:/workdirectory/PROPIO16/simple_alu.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 simple_alu.ngc simple_alu.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm simple_alu -w -dir netgen/translate -ofmt vhdl -sim simple_alu.ngd simple_alu_translate.vhd 

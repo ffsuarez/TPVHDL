@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/workdirectory/PROPIO10/PROPIO10_TB_isim_beh.exe" -prj "D:/workdirectory/PROPIO10/PROPIO10_TB_beh.prj" "work.PROPIO10_TB" 

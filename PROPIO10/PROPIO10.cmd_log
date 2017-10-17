@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO10/PROPIO10.xst" -ofn "D:/workdirectory/PROPIO10/PROPIO10.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO10/PROPIO10.xst" -ofn "D:/workdirectory/PROPIO10/PROPIO10.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO10/PROPIO10.xst" -ofn "D:/workdirectory/PROPIO10/PROPIO10.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO10/PROPIO10.xst" -ofn "D:/workdirectory/PROPIO10/PROPIO10.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO10/PROPIO10.xst" -ofn "D:/workdirectory/PROPIO10/PROPIO10.syr" 
+netgen -intstyle ise -ar Structure -tm PROPIO10 -w -dir netgen/synthesis -ofmt vhdl -sim PROPIO10.ngc PROPIO10_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 PROPIO10.ngc PROPIO10.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm PROPIO10 -w -dir netgen/translate -ofmt vhdl -sim PROPIO10.ngd PROPIO10_translate.vhd 
+xst -intstyle ise -ifn "D:/workdirectory/PROPIO10/PROPIO10.xst" -ofn "D:/workdirectory/PROPIO10/PROPIO10.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 PROPIO10.ngc PROPIO10.ngd  
+netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm PROPIO10 -w -dir netgen/translate -ofmt vhdl -sim PROPIO10.ngd PROPIO10_translate.vhd 

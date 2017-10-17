@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="PROPIO17.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="PROPIO17.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PROPIO17.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PROPIO17.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="PROPIO17.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="PROPIO17.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="PROPIO17.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PROPIO17.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="PROPIO17.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PROPIO17.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PROPIO17.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROPIO17_envsettings.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PROPIO17_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PROPIO17_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PROPIO17_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+    </file>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/translate/PROPIO17_translate.nlf"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/translate/PROPIO17_translate.vhd"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="p17tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="p17tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="p17tb_isim_beh.wdb"/>
+    <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="p17tb_isim_translate.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="p17tb_isim_translate.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="p17tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="p17tb_translate.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostTranslateSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1508111474" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1508111474">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508111752" xil_pn:in_ck="9090235149024770479" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1508111752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="PROPIO17.vhd"/>
+      <outfile xil_pn:name="p17tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1508111723" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6237475023311121732" xil_pn:start_ts="1508111723">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508111723" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8537126368443107778" xil_pn:start_ts="1508111723">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508111474" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8678376636560144911" xil_pn:start_ts="1508111474">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508111752" xil_pn:in_ck="9090235149024770479" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1508111752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="PROPIO17.vhd"/>
+      <outfile xil_pn:name="p17tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1508111763" xil_pn:in_ck="9090235149024770479" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4045281104727482408" xil_pn:start_ts="1508111752">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="p17tb_beh.prj"/>
+      <outfile xil_pn:name="p17tb_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1508111764" xil_pn:in_ck="-4075189931023648995" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5853207338814484651" xil_pn:start_ts="1508111763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="p17tb_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112393" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1508112393">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112393" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-9162715981085662046" xil_pn:start_ts="1508112393">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112393" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8678376636560144911" xil_pn:start_ts="1508112393">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112393" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1508112393">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112393" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-6238873868452011484" xil_pn:start_ts="1508112393">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112393" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1508112393">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112393" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-181743351043478405" xil_pn:start_ts="1508112393">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112422" xil_pn:in_ck="4172740233003995665" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-917082245007070646" xil_pn:start_ts="1508112393">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PROPIO17.lso"/>
+      <outfile xil_pn:name="PROPIO17.ngc"/>
+      <outfile xil_pn:name="PROPIO17.ngr"/>
+      <outfile xil_pn:name="PROPIO17.prj"/>
+      <outfile xil_pn:name="PROPIO17.stx"/>
+      <outfile xil_pn:name="PROPIO17.syr"/>
+      <outfile xil_pn:name="PROPIO17.xst"/>
+      <outfile xil_pn:name="PROPIO17_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112423" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="5826310247701721561" xil_pn:start_ts="1508112422">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112442" xil_pn:in_ck="4172740233003986919" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4458273779582277796" xil_pn:start_ts="1508112423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="PROPIO17.bld"/>
+      <outfile xil_pn:name="PROPIO17.ngd"/>
+      <outfile xil_pn:name="PROPIO17_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112449" xil_pn:in_ck="4172740233003986920" xil_pn:name="TRAN_postXlateSimModel" xil_pn:prop_ck="-8427243258383163239" xil_pn:start_ts="1508112442">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/translate/PROPIO17_translate.nlf"/>
+      <outfile xil_pn:name="netgen/translate/PROPIO17_translate.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112449" xil_pn:in_ck="185776572850906921" xil_pn:name="TRAN_copyPost-TranslateAbstractToPreSimulation" xil_pn:start_ts="1508112449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen/translate/PROPIO17_translate.vhd"/>
+      <outfile xil_pn:name="p17tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112468" xil_pn:in_ck="185776572850906921" xil_pn:name="TRAN_ISimulatePostTranslateModelRunFuse" xil_pn:prop_ck="9101665404844404168" xil_pn:start_ts="1508112449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="p17tb_isim_translate.exe"/>
+      <outfile xil_pn:name="p17tb_translate.prj"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1508112469" xil_pn:in_ck="-8839367818139508580" xil_pn:name="TRAN_ISimulatePostTranslateModel" xil_pn:prop_ck="-1258907867069059595" xil_pn:start_ts="1508112468">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="p17tb_isim_translate.wdb"/>
+    </transform>
+  </transforms>
+
+</generated_project>

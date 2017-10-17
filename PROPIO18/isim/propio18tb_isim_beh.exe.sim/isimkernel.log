@@ -1,0 +1,28 @@
+Command line:
+   propio18tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49538
+
+Sun Oct 15 21:55:23 2017
+
+
+ Elaboration Time: 0.904806 sec
+
+ Current Memory Usage: 1182.4 Meg
+
+ Total Signals          : 14
+ Total Nets             : 9
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 9
+ Total Scalar Nets and Variables : 370
+
+ Total Simulation Time: 1.01401 sec
+
+ Current Memory Usage: 710.529 Meg
+
+Sun Oct 15 22:11:46 2017
+

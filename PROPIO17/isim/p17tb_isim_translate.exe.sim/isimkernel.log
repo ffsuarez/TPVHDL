@@ -1,0 +1,28 @@
+Command line:
+   p17tb_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49516
+
+Sun Oct 15 21:07:55 2017
+
+
+ Elaboration Time: 1.06081 sec
+
+ Current Memory Usage: 1182.25 Meg
+
+ Total Signals          : 39
+ Total Nets             : 39
+ Total Signal Drivers   : 9
+ Total Blocks           : 13
+ Total Primitive Blocks : 10
+ Total Processes        : 8
+ Total Traceable Variables  : 96
+ Total Scalar Nets and Variables : 4516
+
+ Total Simulation Time: 1.12321 sec
+
+ Current Memory Usage: 710.373 Meg
+
+Sun Oct 15 21:12:33 2017
+
