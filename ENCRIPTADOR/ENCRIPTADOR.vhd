@@ -33,7 +33,7 @@ signal counter : unsigned (1 downto 0);
 begin
 enc: process(counter,ent_datos,letra_codigo,ultimo_dato)
 begin
-	salida_datos<=(others=>'Z');
+	--salida_datos<=(others=>'Z');
 	if(counter="10")then
 		salida_datos <= ent_datos xor letra_codigo;
 		if(ultimo_dato='1')then

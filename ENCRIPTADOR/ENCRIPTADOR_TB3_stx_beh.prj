@@ -1,0 +1,2 @@
+vhdl isim_temp "ENCRIPTADOR.vhd"
+vhdl isim_temp "ENCRIPTADOR_TB3.vhd"

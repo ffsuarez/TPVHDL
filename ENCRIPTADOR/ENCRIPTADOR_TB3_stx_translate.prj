@@ -1,0 +1,2 @@
+vhdl isim_temp "netgen/translate/ENCRIPTADOR_translate.vhd"
+vhdl isim_temp "ENCRIPTADOR_TB3.vhd"

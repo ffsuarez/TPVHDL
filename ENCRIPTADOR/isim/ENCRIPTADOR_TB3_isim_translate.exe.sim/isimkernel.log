@@ -1,0 +1,10 @@
+Command line:
+   ENCRIPTADOR_TB3_isim_translate.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49525
+
+Wed Oct 18 15:07:59 2017
+
+
+ Elaboration Time: 1.06081 sec

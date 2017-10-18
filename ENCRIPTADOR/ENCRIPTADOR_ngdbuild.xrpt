@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Wed Oct 18 11:56:18 2017">
+  <application stringID="NgdBuild" timeStamp="Wed Oct 18 15:07:18 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -55,6 +55,7 @@
     </section>
     <task stringID="NGDBUILD_OPTION_SUMMARY">
       <section stringID="NGDBUILD_OPTION_SUMMARY">
+        <item DEFAULT="None" label="-bm" stringID="NGDBUILD_bmm_file" value="ENCRIPTADOR_TB3.bmm"/>
         <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
         <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
         <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc6slx16-csg324-3"/>
@@ -70,17 +71,21 @@
       </section>
       <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_BUFGP" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="13"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="25"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="26"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LDE_1" value="13"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="12"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="13"/>
       </section>
       <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
         <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="1"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="13"/>
-        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="25"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="26"/>
         <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LDE_1" value="13"/>
         <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="12"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="2"/>
         <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="13"/>
       </section>
       <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
