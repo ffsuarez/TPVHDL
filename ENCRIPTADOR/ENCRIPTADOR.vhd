@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx primitives in this code.
@@ -33,11 +33,13 @@ signal counter : unsigned (1 downto 0);
 begin
 enc: process(counter,ent_datos,letra_codigo,ultimo_dato)
 begin
+	salida_datos<=(others=>'Z');
 	if(counter="10")then
 		salida_datos <= ent_datos xor letra_codigo;
 		if(ultimo_dato='1')then
 			fin<='1';
-		else fin<='0';
+		else 
+			fin<='0';
 		end if;
 	end if;
 end process enc;

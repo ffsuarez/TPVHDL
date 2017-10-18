@@ -32,17 +32,18 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ENCRIPTADOR.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ENCRIPTADOR.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ENCRIPTADOR.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB2_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB2_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ENCRIPTADOR_TB2_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ENCRIPTADOR_TB2_isim_beh.wdb"/>
     <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ENCRIPTADOR_TB2_isim_translate.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ENCRIPTADOR_TB2_isim_translate.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB2_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB2_translate.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB2_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB2_translate.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ENCRIPTADOR_TB_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ENCRIPTADOR_TB_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ENCRIPTADOR_envsettings.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ENCRIPTADOR_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="ENCRIPTADOR_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ENCRIPTADOR_xst.xrpt"/>
@@ -60,8 +61,8 @@
       <branch xil_pn:name="PostTranslateSimulation"/>
     </file>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/ENCRIPTADOR_synthesis.nlf"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/ENCRIPTADOR_synthesis.vhd"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/ENCRIPTADOR_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/synthesis/ENCRIPTADOR_synthesis.vhd"/>
     <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/translate/ENCRIPTADOR_translate.nlf"/>
     <file xil_pn:branch="PostTranslateSimulation" xil_pn:fileType="FILE_VHDL" xil_pn:name="netgen/translate/ENCRIPTADOR_translate.vhd"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -84,9 +85,9 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ENCRIPTADOR.vhd"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1508338364" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-5172018154139099592" xil_pn:start_ts="1508338364">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -107,64 +108,60 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ENCRIPTADOR.vhd"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2.vhd"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1508338379" xil_pn:in_ck="5561688164161184381" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5913935484551042032" xil_pn:start_ts="1508338364">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1508338380" xil_pn:in_ck="6776378997987675024" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="756429775875291517" xil_pn:start_ts="1508338379">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2_beh.prj"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
-    <transform xil_pn:end_ts="1508338380" xil_pn:in_ck="6776378997987675024" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="756429775875291517" xil_pn:start_ts="1508338379">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
-    </transform>
-    <transform xil_pn:end_ts="1508337836" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1508337836">
+    <transform xil_pn:end_ts="1508348534" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1508348534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1508337836" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8970299178388454940" xil_pn:start_ts="1508337836">
+    <transform xil_pn:end_ts="1508348534" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8970299178388454940" xil_pn:start_ts="1508348534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1508337836" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7613077286306373547" xil_pn:start_ts="1508337836">
+    <transform xil_pn:end_ts="1508348534" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7613077286306373547" xil_pn:start_ts="1508348534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1508337836" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1508337836">
+    <transform xil_pn:end_ts="1508348534" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1508348534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1508337836" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8016687029426854818" xil_pn:start_ts="1508337836">
+    <transform xil_pn:end_ts="1508348534" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8016687029426854818" xil_pn:start_ts="1508348534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1508337836" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1508337836">
+    <transform xil_pn:end_ts="1508348534" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1508348534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1508337836" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2168806784542700021" xil_pn:start_ts="1508337836">
+    <transform xil_pn:end_ts="1508348534" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2168806784542700021" xil_pn:start_ts="1508348534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1508337867" xil_pn:in_ck="91273592135055531" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1716126542732160380" xil_pn:start_ts="1508337836">
+    <transform xil_pn:end_ts="1508348566" xil_pn:in_ck="91273592135055531" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-1716126542732160380" xil_pn:start_ts="1508348534">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ENCRIPTADOR.lso"/>
@@ -174,6 +171,9 @@
       <outfile xil_pn:name="ENCRIPTADOR.stx"/>
       <outfile xil_pn:name="ENCRIPTADOR.syr"/>
       <outfile xil_pn:name="ENCRIPTADOR.xst"/>
+      <outfile xil_pn:name="ENCRIPTADOR_TB2_beh.prj"/>
+      <outfile xil_pn:name="ENCRIPTADOR_TB2_stx_beh.prj"/>
+      <outfile xil_pn:name="ENCRIPTADOR_TB2_translate.prj"/>
       <outfile xil_pn:name="ENCRIPTADOR_TB_beh.prj"/>
       <outfile xil_pn:name="ENCRIPTADOR_TB_stx_beh.prj"/>
       <outfile xil_pn:name="ENCRIPTADOR_xst.xrpt"/>
@@ -188,6 +188,8 @@
     <transform xil_pn:end_ts="1508338581" xil_pn:in_ck="91273592135046785" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2541533513119544138" xil_pn:start_ts="1508338558">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="ENCRIPTADOR.bld"/>
       <outfile xil_pn:name="ENCRIPTADOR.ngd"/>
       <outfile xil_pn:name="ENCRIPTADOR_ngdbuild.xrpt"/>
@@ -197,6 +199,7 @@
     <transform xil_pn:end_ts="1508338588" xil_pn:in_ck="91273592135046786" xil_pn:name="TRAN_postXlateSimModel" xil_pn:prop_ck="2508390781173541837" xil_pn:start_ts="1508338581">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/translate/ENCRIPTADOR_translate.nlf"/>
       <outfile xil_pn:name="netgen/translate/ENCRIPTADOR_translate.vhd"/>
@@ -204,34 +207,38 @@
     <transform xil_pn:end_ts="1508338588" xil_pn:in_ck="-7869848496547860361" xil_pn:name="TRAN_copyPost-TranslateAbstractToPreSimulation" xil_pn:start_ts="1508338588">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2.vhd"/>
-      <outfile xil_pn:name="netgen/translate/ENCRIPTADOR_translate.vhd"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1508338608" xil_pn:in_ck="-7869848496547860361" xil_pn:name="TRAN_ISimulatePostTranslateModelRunFuse" xil_pn:prop_ck="-4906563008931024976" xil_pn:start_ts="1508338588">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2_isim_translate.exe"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2_translate.prj"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1508338610" xil_pn:in_ck="-1633331250412036784" xil_pn:name="TRAN_ISimulatePostTranslateModel" xil_pn:prop_ck="1265588852455387473" xil_pn:start_ts="1508338608">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="ENCRIPTADOR_TB2_isim_translate.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1508338545" xil_pn:in_ck="91273592135046785" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="9206293054521879250" xil_pn:start_ts="1508338536">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/ENCRIPTADOR_synthesis.nlf"/>

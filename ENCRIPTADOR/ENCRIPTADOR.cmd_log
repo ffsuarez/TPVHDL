@@ -2,3 +2,8 @@ xst -intstyle ise -ifn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.xst" -ofn "D:/w
 netgen -intstyle ise -ar Structure -tm ENCRIPTADOR -w -dir netgen/synthesis -ofmt vhdl -sim ENCRIPTADOR.ngc ENCRIPTADOR_synthesis.vhd 
 ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 ENCRIPTADOR.ngc ENCRIPTADOR.ngd  
 netgen -intstyle ise -rpw 100 -tpw 0 -ar Structure -tm ENCRIPTADOR -w -dir netgen/translate -ofmt vhdl -sim ENCRIPTADOR.ngd ENCRIPTADOR_translate.vhd 
+xst -intstyle ise -ifn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.xst" -ofn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.xst" -ofn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.xst" -ofn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.xst" -ofn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.syr" 
+xst -intstyle ise -ifn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.xst" -ofn "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.syr" 
