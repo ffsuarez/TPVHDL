@@ -16,9 +16,9 @@ ARCHITECTURE behavior OF ENCRIPTADOR_TB3 IS
     COMPONENT ENCRIPTADOR
     PORT(
          clk : IN  std_logic;
-         letra_codigo : IN  std_logic_vector(11 downto 0);
-         salida_datos : OUT  std_logic_vector(11 downto 0);
-         ent_datos : IN  std_logic_vector(11 downto 0);
+         letra_codigo : IN  std_logic_vector(10 downto 0);
+         salida_datos : OUT  std_logic_vector(10 downto 0);
+         ent_datos : IN  std_logic_vector(10 downto 0);
          ultimo_dato : IN  std_logic;
          reset2 : IN  std_logic;
          fin : OUT  std_logic
@@ -28,13 +28,13 @@ ARCHITECTURE behavior OF ENCRIPTADOR_TB3 IS
 
    --Inputs
    signal clk : std_logic := '0';
-   signal letra_codigo : std_logic_vector(11 downto 0) := (others => '0');
-   signal ent_datos : std_logic_vector(11 downto 0) := (others => '0');
+   signal letra_codigo : std_logic_vector(10 downto 0) := (others => '0');
+   signal ent_datos : std_logic_vector(10 downto 0) := (others => '0');
    signal ultimo_dato : std_logic := '0';
    signal reset2 : std_logic := '0';
 
  	--Outputs
-   signal salida_datos : std_logic_vector(11 downto 0);
+   signal salida_datos : std_logic_vector(10 downto 0);
    signal fin : std_logic;
 
    -- Clock period definitions
@@ -72,21 +72,21 @@ BEGIN
    begin		
       -- hold reset state for 100 ns.
 
-		letra_codigo<="100100100011";ent_datos<="000111001001";ultimo_dato<='0';reset2<='1';
+		letra_codigo<="10010010001";ent_datos<="00111001001";ultimo_dato<='0';reset2<='1';
       wait for 100 ns;	
 
       wait for clk_period*10;
 
       -- insert stimulus here 
-		letra_codigo<="100100100011";ent_datos<="000111001001";ultimo_dato<='0';reset2<='0';
+		letra_codigo<="10010010001";ent_datos<="00111001001";ultimo_dato<='0';reset2<='0';
       wait for 100 ns;
-		letra_codigo<="001000111111";ent_datos<="000111111011";ultimo_dato<='1';reset2<='0';		
+		letra_codigo<="00100111111";ent_datos<="00011111011";ultimo_dato<='1';reset2<='0';		
       wait for 100 ns;			
-		letra_codigo<="100100100011";ent_datos<="000111001001";ultimo_dato<='1';reset2<='1';
+		letra_codigo<="10010010011";ent_datos<="00011001001";ultimo_dato<='1';reset2<='1';
       wait for 100 ns;			
-		letra_codigo<="000011110001";ent_datos<="111111001011";ultimo_dato<='0';reset2<='0';
+		letra_codigo<="00001111001";ent_datos<="11111001011";ultimo_dato<='0';reset2<='0';
       wait for 100 ns;			
-		letra_codigo<="100100100011";ent_datos<="000111001001";ultimo_dato<='1';reset2<='0';
+		letra_codigo<="10010000011";ent_datos<="00011001001";ultimo_dato<='1';reset2<='0';
       wait for 100 ns;			
 		clc<='0';
       wait;

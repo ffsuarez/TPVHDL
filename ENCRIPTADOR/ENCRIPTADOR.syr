@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.66 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.81 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.66 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.82 secs
  
 --> Reading design: ENCRIPTADOR.prj
 
@@ -123,7 +123,6 @@ Synthesizing Unit <ENCRIPTADOR>.
     Related source file is "D:\workdirectory\ENCRIPTADOR\ENCRIPTADOR.vhd".
     Found 2-bit register for signal <counter>.
     Found 2-bit adder for signal <counter[1]_GND_4_o_add_4_OUT> created at line 1241.
-WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -135,11 +134,11 @@ WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<2>>. Latches may be
 WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <fin>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <salida_datos<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 D-type flip-flop(s).
-	inferred  13 Latch(s).
+	inferred  12 Latch(s).
 Unit <ENCRIPTADOR> synthesized.
 
 =========================================================================
@@ -150,10 +149,10 @@ Macro Statistics
  2-bit adder                                           : 1
 # Registers                                            : 1
  2-bit register                                        : 1
-# Latches                                              : 13
- 1-bit latch                                           : 13
+# Latches                                              : 12
+ 1-bit latch                                           : 12
 # Xors                                                 : 1
- 12-bit xor2                                           : 1
+ 11-bit xor2                                           : 1
 
 =========================================================================
 
@@ -173,7 +172,7 @@ Macro Statistics
 # Counters                                             : 1
  2-bit up counter                                      : 1
 # Xors                                                 : 1
- 12-bit xor2                                           : 1
+ 11-bit xor2                                           : 1
 
 =========================================================================
 
@@ -217,17 +216,17 @@ Top Level Output File Name         : ENCRIPTADOR.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 14
-#      LUT2                        : 12
+# BELS                             : 13
+#      LUT2                        : 11
 #      LUT3                        : 2
-# FlipFlops/Latches                : 15
+# FlipFlops/Latches                : 14
 #      FD                          : 2
-#      LDE_1                       : 13
+#      LDE_1                       : 12
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 39
-#      IBUF                        : 26
-#      OBUF                        : 13
+# IO Buffers                       : 36
+#      IBUF                        : 24
+#      OBUF                        : 12
 
 Device utilization summary:
 ---------------------------
@@ -237,20 +236,20 @@ Selected Device : 6slx16csg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:               2  out of  18224     0%  
- Number of Slice LUTs:                   14  out of   9112     0%  
-    Number used as Logic:                14  out of   9112     0%  
+ Number of Slice LUTs:                   13  out of   9112     0%  
+    Number used as Logic:                13  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     14
-   Number with an unused Flip Flop:      12  out of     14    85%  
-   Number with an unused LUT:             0  out of     14     0%  
-   Number of fully used LUT-FF pairs:     2  out of     14    14%  
+ Number of LUT Flip Flop pairs used:     13
+   Number with an unused Flip Flop:      11  out of     13    84%  
+   Number with an unused LUT:             0  out of     13     0%  
+   Number of fully used LUT-FF pairs:     2  out of     13    15%  
    Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                          40
- Number of bonded IOBs:                  40  out of    232    17%  
-    IOB Flip Flops/Latches:              13
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    232    15%  
+    IOB Flip Flops/Latches:              12
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -276,7 +275,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-counter_0                          | NONE(fin)              | 13    |
+counter_0                          | NONE(fin)              | 12    |
 clk                                | BUFGP                  | 2     |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -289,7 +288,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 1.838ns (Maximum Frequency: 544.099MHz)
+   Minimum period: 1.814ns (Maximum Frequency: 551.238MHz)
    Minimum input arrival time before clock: 2.374ns
    Maximum output required time after clock: 3.648ns
    Maximum combinational path delay: No path found
@@ -300,10 +299,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 1.838ns (frequency: 544.099MHz)
+  Clock period: 1.814ns (frequency: 551.238MHz)
   Total number of paths / destination ports: 4 / 2
 -------------------------------------------------------------------------
-Delay:               1.838ns (Levels of Logic = 1)
+Delay:               1.814ns (Levels of Logic = 1)
   Source:            counter_0 (FF)
   Destination:       counter_0 (FF)
   Source Clock:      clk rising
@@ -313,29 +312,29 @@ Delay:               1.838ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              15   0.447   1.086  counter_0 (counter_0)
+     FD:C->Q              14   0.447   1.062  counter_0 (counter_0)
      LUT3:I1->O            1   0.203   0.000  counter_1_rstpot (counter_1_rstpot)
      FD:D                      0.102          counter_1
     ----------------------------------------
-    Total                      1.838ns (0.752ns logic, 1.086ns route)
-                                       (40.9% logic, 59.1% route)
+    Total                      1.814ns (0.752ns logic, 1.062ns route)
+                                       (41.5% logic, 58.5% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'counter_0'
-  Total number of paths / destination ports: 25 / 13
+  Total number of paths / destination ports: 23 / 12
 -------------------------------------------------------------------------
 Offset:              2.146ns (Levels of Logic = 2)
-  Source:            ent_datos<10> (PAD)
-  Destination:       salida_datos_10 (LATCH)
+  Source:            ent_datos<9> (PAD)
+  Destination:       salida_datos_9 (LATCH)
   Destination Clock: counter_0 rising
 
-  Data Path: ent_datos<10> to salida_datos_10
+  Data Path: ent_datos<9> to salida_datos_9
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.222   0.684  ent_datos_10_IBUF (ent_datos_10_IBUF)
-     LUT2:I0->O            1   0.203   0.000  Mxor_ent_datos[11]_letra_codigo[11]_xor_1_OUT_10_xo<0>1 (ent_datos[11]_letra_codigo[11]_xor_1_OUT<10>)
-     LDE_1:D                   0.037          salida_datos_10
+     IBUF:I->O             1   1.222   0.684  ent_datos_9_IBUF (ent_datos_9_IBUF)
+     LUT2:I0->O            1   0.203   0.000  Mxor_ent_datos[10]_letra_codigo[10]_xor_1_OUT_9_xo<0>1 (ent_datos[10]_letra_codigo[10]_xor_1_OUT<9>)
+     LDE_1:D                   0.037          salida_datos_9
     ----------------------------------------
     Total                      2.146ns (1.462ns logic, 0.684ns route)
                                        (68.1% logic, 31.9% route)
@@ -362,19 +361,19 @@ Offset:              2.374ns (Levels of Logic = 2)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'counter_0'
-  Total number of paths / destination ports: 13 / 13
+  Total number of paths / destination ports: 12 / 12
 -------------------------------------------------------------------------
 Offset:              3.648ns (Levels of Logic = 1)
-  Source:            salida_datos_11 (LATCH)
-  Destination:       salida_datos<11> (PAD)
+  Source:            salida_datos_10 (LATCH)
+  Destination:       salida_datos<10> (PAD)
   Source Clock:      counter_0 rising
 
-  Data Path: salida_datos_11 to salida_datos<11>
+  Data Path: salida_datos_10 to salida_datos<10>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDE_1:G->Q            1   0.498   0.579  salida_datos_11 (salida_datos_11)
-     OBUF:I->O                 2.571          salida_datos_11_OBUF (salida_datos<11>)
+     LDE_1:G->Q            1   0.498   0.579  salida_datos_10 (salida_datos_10)
+     OBUF:I->O                 2.571          salida_datos_10_OBUF (salida_datos<10>)
     ----------------------------------------
     Total                      3.648ns (3.069ns logic, 0.579ns route)
                                        (84.1% logic, 15.9% route)
@@ -389,7 +388,7 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.838|         |         |         |
+clk            |    1.814|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock counter_0
@@ -397,20 +396,20 @@ Clock to Setup on destination clock counter_0
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    1.750|         |         |         |
+clk            |    1.726|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 24.00 secs
-Total CPU time to Xst completion: 24.40 secs
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 24.63 secs
  
 --> 
 
 Total memory usage is 196976 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   13 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

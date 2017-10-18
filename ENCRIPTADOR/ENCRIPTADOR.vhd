@@ -13,9 +13,9 @@ use IEEE.NUMERIC_STD.ALL;
 entity ENCRIPTADOR is
     Port ( 
 				clk : in  STD_LOGIC;
-				letra_codigo : in STD_LOGIC_VECTOR(11 downto 0);
-				salida_datos : out  STD_LOGIC_VECTOR (11 downto 0);
-				ent_datos : in  STD_LOGIC_VECTOR (11 downto 0);
+				letra_codigo : in STD_LOGIC_VECTOR(10 downto 0);
+				salida_datos : out  STD_LOGIC_VECTOR (10 downto 0);
+				ent_datos : in  STD_LOGIC_VECTOR (10 downto 0);
 				ultimo_dato : in STD_LOGIC;				
 				reset2: in STD_LOGIC;
 				fin : out STD_LOGIC
@@ -24,7 +24,7 @@ end ENCRIPTADOR;
 
 architecture Behavioral of ENCRIPTADOR is
 --seniales
-signal aux : std_logic_vector(11 downto 0);
+signal aux : std_logic_vector(10 downto 0);
 constant periodo_clks : unsigned (1 downto 0) :="10";
 signal counter : unsigned (1 downto 0);
 --
