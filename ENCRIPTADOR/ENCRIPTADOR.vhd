@@ -11,10 +11,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity ENCRIPTADOR is
-    Port ( clk : in  STD_LOGIC;
+    Port ( 
+				clk : in  STD_LOGIC;
 				letra_codigo : in STD_LOGIC_VECTOR(11 downto 0);
-           salida_datos : out  STD_LOGIC_VECTOR (11 downto 0);
-           ent_datos : in  STD_LOGIC_VECTOR (11 downto 0));
+				salida_datos : out  STD_LOGIC_VECTOR (11 downto 0);
+				ent_datos : in  STD_LOGIC_VECTOR (11 downto 0);
+				ultimo_dato : in STD_LOGIC;
+				fin : out STD_LOGIC
+			);
 end ENCRIPTADOR;
 
 architecture Behavioral of ENCRIPTADOR is
@@ -27,7 +31,11 @@ begin
 enc: process(clk,ent_datos,letra_codigo)
 begin
 	if(clk'event and clk='1')then
-		salida_datos <= ent_datos xor letra_codigo;		
+		salida_datos <= ent_datos xor letra_codigo;
+		if(ultimo_dato='1')then
+			fin<='1';
+		else fin<='0';
+		end if;
 	end if;
 end process enc;
 
