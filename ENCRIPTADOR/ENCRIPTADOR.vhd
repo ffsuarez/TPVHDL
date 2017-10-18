@@ -16,7 +16,8 @@ entity ENCRIPTADOR is
 				letra_codigo : in STD_LOGIC_VECTOR(11 downto 0);
 				salida_datos : out  STD_LOGIC_VECTOR (11 downto 0);
 				ent_datos : in  STD_LOGIC_VECTOR (11 downto 0);
-				ultimo_dato : in STD_LOGIC;
+				ultimo_dato : in STD_LOGIC;				
+				reset2: in STD_LOGIC;
 				fin : out STD_LOGIC
 			);
 end ENCRIPTADOR;
@@ -24,13 +25,15 @@ end ENCRIPTADOR;
 architecture Behavioral of ENCRIPTADOR is
 --seniales
 signal aux : std_logic_vector(11 downto 0);
+constant periodo_clks : unsigned (1 downto 0) :="10";
+signal counter : unsigned (1 downto 0);
 --
 --declaracion componentes
 --
 begin
-enc: process(clk,ent_datos,letra_codigo)
+enc: process(counter,ent_datos,letra_codigo,ultimo_dato)
 begin
-	if(clk'event and clk='1')then
+	if(counter="10")then
 		salida_datos <= ent_datos xor letra_codigo;
 		if(ultimo_dato='1')then
 			fin<='1';
@@ -39,5 +42,17 @@ begin
 	end if;
 end process enc;
 
+contador: process(clk,reset2)
+begin
+	if(clk'event and clk='1')then
+			if(reset2='1')then
+				counter<=(others=>'0');
+			elsif(counter=periodo_clks)then
+				counter<=(others=>'0');
+			else
+				counter<=counter+1;
+			end if;
+	end if;
+end process contador;
 end Behavioral;
 
