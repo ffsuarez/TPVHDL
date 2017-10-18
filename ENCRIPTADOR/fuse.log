@@ -6,5 +6,16 @@ Determining compilation order of HDL files
 Parsing VHDL file "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.vhd" into library work
 Parsing VHDL file "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB.vhd" into library work
 Starting static elaboration
-ERROR:HDLCompiler:410 - "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB.vhd" Line 67: Expression has 11 elements ; expected 12
-ERROR:Simulator:777 - Static elaboration of top level VHDL design unit encriptador_tb in library work failed
+Completed static elaboration
+Fuse Memory Usage: 104656 KB
+Fuse CPU Usage: 1856 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity ENCRIPTADOR [encriptador_default]
+Compiling architecture behavior of entity encriptador_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 VHDL Units
+Built simulation executable D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB_isim_beh.exe
+Fuse Memory Usage: 113600 KB
+Fuse CPU Usage: 2230 ms

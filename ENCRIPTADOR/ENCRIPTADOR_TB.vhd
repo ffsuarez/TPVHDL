@@ -62,11 +62,12 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-		ent_datos<="11001001000";letra_codigo<="10101011001";
+		ent_datos<="111001001000";letra_codigo<="110101011001";
       wait for 100 ns;	
-		ent_datos<="010101011100";letra_codigo<="00000000000";
-
-      wait for clk_period*10;
+		ent_datos<="010101011100";letra_codigo<="000000000000";
+		wait for 100 ns;
+		clc<='0';
+		wait for clk_period*10;
 
       -- insert stimulus here 
 
