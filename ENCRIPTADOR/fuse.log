@@ -1,0 +1,10 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB_isim_beh.exe -prj D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB_beh.prj work.ENCRIPTADOR_TB 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.vhd" into library work
+Parsing VHDL file "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:410 - "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB.vhd" Line 67: Expression has 11 elements ; expected 12
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit encriptador_tb in library work failed

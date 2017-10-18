@@ -21,8 +21,51 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="ENCRIPTADOR.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ENCRIPTADOR_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1508276802" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1508276802">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508277077" xil_pn:in_ck="-5421386441604136469" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1508277077">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ENCRIPTADOR.vhd"/>
+      <outfile xil_pn:name="ENCRIPTADOR_TB.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1508277049" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8473626284370745434" xil_pn:start_ts="1508277049">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508277049" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8004581986224109532" xil_pn:start_ts="1508277049">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508276802" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="7613077286306373547" xil_pn:start_ts="1508276802">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1508277049" xil_pn:in_ck="-5421386441604136469" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1508277049">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ENCRIPTADOR.vhd"/>
+      <outfile xil_pn:name="ENCRIPTADOR_TB.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1508277054" xil_pn:in_ck="-5421386441604136469" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6313959872586989140" xil_pn:start_ts="1508277049">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
 
 </generated_project>

@@ -1,0 +1,2 @@
+vhdl work "ENCRIPTADOR.vhd"
+vhdl work "ENCRIPTADOR_TB.vhd"
