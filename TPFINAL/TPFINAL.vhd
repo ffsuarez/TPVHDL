@@ -19,6 +19,12 @@ architecture Behavioral of TPFINAL is
 --seniales
 signal address : STD_LOGIC_VECTOR (3 downto 0);
 signal ENTRADA_DATOS : STD_LOGIC_VECTOR (10 downto 0);
+type TIPOCLAVE is array (0 to 15) of std_logic_vector (10 downto 0);
+constant CLAVE : TIPOCLAVE :=
+("00000000001","00000000010","00000000100","00000001000",
+"00000000001","00000000010","00000000100","00000001000",
+"00000000001","00000000010","00000000100","00000001000",
+"00000000001","00000000010","00000000100","00000001000");
 --
 
 --declaracion componentes
