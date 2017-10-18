@@ -210,6 +210,8 @@
     <transform xil_pn:end_ts="1508338608" xil_pn:in_ck="-7869848496547860361" xil_pn:name="TRAN_ISimulatePostTranslateModelRunFuse" xil_pn:prop_ck="-4906563008931024976" xil_pn:start_ts="1508338588">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ENCRIPTADOR_TB2_isim_translate.exe"/>
       <outfile xil_pn:name="ENCRIPTADOR_TB2_translate.prj"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -220,6 +222,8 @@
     <transform xil_pn:end_ts="1508338610" xil_pn:in_ck="-1633331250412036784" xil_pn:name="TRAN_ISimulatePostTranslateModel" xil_pn:prop_ck="1265588852455387473" xil_pn:start_ts="1508338608">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ENCRIPTADOR_TB2_isim_translate.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
