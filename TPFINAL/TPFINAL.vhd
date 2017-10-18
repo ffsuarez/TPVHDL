@@ -17,10 +17,23 @@ end TPFINAL;
 
 architecture Behavioral of TPFINAL is
 --seniales
-
+signal address : STD_LOGIC_VECTOR (3 downto 0);
+signal ENTRADA_DATOS : STD_LOGIC_VECTOR (10 downto 0);
 --
 
 --declaracion componentes
+
+COMPONENT RAM1
+  PORT (
+    a : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    d : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    dpra : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    clk : IN STD_LOGIC;
+    we : IN STD_LOGIC;
+    dpo : OUT STD_LOGIC_VECTOR(10 DOWNTO 0)
+  );
+END COMPONENT;
+
 
 --
 begin
