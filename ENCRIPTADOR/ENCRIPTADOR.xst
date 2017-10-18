@@ -1,6 +1,9 @@
-set -tmpdir "D:/workdirectory/ENCRIPTADOR/xst/projnav.tmp"
-set -xsthdpdir "D:/workdirectory/ENCRIPTADOR/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn ENCRIPTADOR.prj
+-ofn ENCRIPTADOR
+-ofmt NGC
 -p xc6slx16-3-csg324
 -top ENCRIPTADOR
 -opt_mode Speed
@@ -47,4 +50,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn ENCRIPTADOR.prj

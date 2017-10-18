@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB_isim_beh.exe" -prj "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB_beh.prj" "work.ENCRIPTADOR_TB" 
+-intstyle "ise" -incremental -lib "secureip" -o "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB2_isim_translate.exe" -prj "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB2_translate.prj" "work.ENCRIPTADOR_TB2" 

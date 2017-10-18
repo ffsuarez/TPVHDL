@@ -1,21 +1,35 @@
-Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB_isim_beh.exe -prj D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB_beh.prj work.ENCRIPTADOR_TB 
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB2_isim_translate.exe -prj D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB2_translate.prj work.ENCRIPTADOR_TB2 
 ISim P.20131013 (signature 0x8ef4fb42)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR.vhd" into library work
-Parsing VHDL file "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB.vhd" into library work
+Parsing VHDL file "D:/workdirectory/ENCRIPTADOR/netgen/translate/ENCRIPTADOR_translate.vhd" into library work
+Parsing VHDL file "D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB2.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 104656 KB
-Fuse CPU Usage: 1856 ms
+Fuse Memory Usage: 122320 KB
+Fuse CPU Usage: 2526 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity ENCRIPTADOR [encriptador_default]
-Compiling architecture behavior of entity encriptador_tb
+Compiling package textio
+Compiling package vital_timing
+Compiling package vcomponents
+Compiling package vital_primitives
+Compiling package vpackage
+Compiling architecture x_ff_v of entity X_FF [\X_FF(true,true,true,"UNPLACED",...]
+Compiling architecture x_lut2_v of entity X_LUT2 [\X_LUT2(true,true,"UNPLACED",(0,...]
+Compiling architecture x_buf_v of entity X_BUF [\X_BUF(true,true,"UNPLACED",(0,0...]
+Compiling architecture x_ckbuf_v of entity X_CKBUF [\X_CKBUF(true,true,"UNPLACED",(0...]
+Compiling architecture x_obuf_v of entity X_OBUF [\X_OBUF(true,true,"DONT_CARE",12...]
+Compiling architecture x_one_v of entity X_ONE [\X_ONE("UNPLACED")(1,8)\]
+Compiling architecture x_zero_v of entity X_ZERO [\X_ZERO("UNPLACED")(1,8)\]
+Compiling architecture x_roc_v of entity X_ROC [\X_ROC("UNPLACED",100000,"*")(1,...]
+Compiling architecture x_toc_v of entity X_TOC [\X_TOC("UNPLACED",0,"*")(1,8,1,1...]
+Compiling architecture structure of entity ENCRIPTADOR [encriptador_default]
+Compiling architecture behavior of entity encriptador_tb2
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 5 VHDL Units
-Built simulation executable D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB_isim_beh.exe
-Fuse Memory Usage: 113600 KB
-Fuse CPU Usage: 2230 ms
+Waiting for 8 sub-compilation(s) to finish...
+Compiled 28 VHDL Units
+Built simulation executable D:/workdirectory/ENCRIPTADOR/ENCRIPTADOR_TB2_isim_translate.exe
+Fuse Memory Usage: 148800 KB
+Fuse CPU Usage: 4523 ms

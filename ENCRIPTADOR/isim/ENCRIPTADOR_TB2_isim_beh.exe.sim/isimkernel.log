@@ -1,0 +1,10 @@
+Command line:
+   ENCRIPTADOR_TB2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49347
+
+Wed Oct 18 11:55:16 2017
+
+
+ Elaboration Time: 0.920406 sec
