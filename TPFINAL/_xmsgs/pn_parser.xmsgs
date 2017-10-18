@@ -11,10 +11,10 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/workdirectory/TPFINAL/TPFINAL.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/workdirectory/TPFINAL/TPFINAL.vhd</arg>&quot; Line <arg fmt="%d" index="2">63</arg>. <arg fmt="%s" index="3">Syntax error near &quot;proces&quot;.</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/workdirectory/TPFINAL/TPFINAL.vhd</arg>&quot; Line <arg fmt="%d" index="2">57</arg>. <arg fmt="%s" index="3">Syntax error near &quot;proces&quot;.</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/workdirectory/TPFINAL/TPFINAL.vhd</arg>&quot; Line <arg fmt="%d" index="2">64</arg>. <arg fmt="%s" index="3">Syntax error near &quot;Behavioral&quot;.</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">D:/workdirectory/TPFINAL/TPFINAL.vhd</arg>&quot; Line <arg fmt="%d" index="2">58</arg>. <arg fmt="%s" index="3">Syntax error near &quot;Behavioral&quot;.</arg>
 </msg>
 
 </messages>
