@@ -12,6 +12,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity TPFINAL is
     Port ( ENVIAR : in  STD_LOGIC;
+				clk : in STD_LOGIC;
            MENSAJE : out  STD_LOGIC_VECTOR (11 downto 0));
 end TPFINAL;
 
@@ -44,6 +45,21 @@ END COMPONENT;
 --
 begin
 
+entradamensaje : RAM1
+  PORT MAP (
+    a => address,
+    d => (others=>'Z'),
+    dpra => (others=>'Z'),
+    clk => clk,
+    we => '0',
+    dpo => ENTRADA_DATOS
+  );
 
+cambio_direccion: process(clk)
+begin
+	if(clk'event and clk='1')then
+		
+	end if;
+end proces cambio_direccion;
 end Behavioral;
 
