@@ -26,14 +26,29 @@ constant CLAVE : TIPOCLAVE :=
 "00000000001","00000000010","00000000100","00000001000",
 "00000000001","00000000010","00000000100","00000001000",
 "00000000001","00000000010","00000000100","00000001000");
-
+signal counter : unsigned (1 downto 0);
 --
 
 --componentes
 
 --
 begin
-
+counter: process(clk,HAB1)
+begin
+	if(RESET1='0')then
+		if(clk'event and clk='1')then
+			if(HAB1='1')then
+				counter<=(others=>'0');
+			elsif(counter="10")then
+				counter<=(others=>'0');
+			else
+				counter<=counter+1;
+			end if;
+		end if;
+	else
+		counter<=(others=>'0');
+	end if;
+end process counter;
 
 end Behavioral;
 
