@@ -13,9 +13,10 @@ use IEEE.NUMERIC_STD.ALL;
 
 entity DIRECCIONAMIENTO is
     Port ( RESET1 : in  STD_LOGIC;
+				clk: in std_logic;
            HAB1 : in  STD_LOGIC;
 			  LETRACLAVE: out STD_LOGIC_VECTOR(10 downto 0);
-           ADDRESS : out  STD_LOGIC_VECTOR (10 downto 0);
+           ADDRESS : out  STD_LOGIC_VECTOR (3 downto 0);
            ULTIMADIRECCION : out  STD_LOGIC);
 end DIRECCIONAMIENTO;
 
@@ -27,8 +28,12 @@ constant CLAVE : TIPOCLAVE :=
 "00000000001","00000000010","00000000100","00000001000",
 "00000000001","00000000010","00000000100","00000001000",
 "00000000001","00000000010","00000000100","00000001000");
+
 signal counter : unsigned (1 downto 0);
-constant periodo_clks : unsigned (1 downto 0);
+constant periodo_clks : unsigned (1 downto 0) :="10";
+
+signal address_s : std_logic_vector(3 downto 0);
+signal indice_clave : integer;
 
 type tipo_estado is (INICIAL,ESPERO2,ENVIAR);
 signal estado_presente,estado_futuro : tipo_estado;
@@ -37,25 +42,39 @@ signal estado_presente,estado_futuro : tipo_estado;
 --componentes
 
 --
+
 begin
-counter: process(clk,HAB1)
+
+
+contador: process(clk,HAB1,RESET1,counter,
+				estado_presente,address_s,indice_clave)
 begin
 	if(clk'event and clk='1')then
 		if(RESET1='1')then
 			counter<=(others=>'0');
+			address_s<="0000";
+			indice_clave<=0;
 		end if;
 	else
 		if(counter=periodo_clks)then
 			counter<=(others=>'0');
 		elsif(estado_presente=ESPERO2)then
 			counter<=counter+1;
+			address_s<=std_logic_vector(unsigned(address_s)+1);
+			indice_clave<=indice_clave+1;
+		elsif(estado_presente=ENVIAR)then
+			if(address_s="1110")then
+				address_s<="0000";
+				indice_clave<=0;
+			end if;
 		end if;
 	end if;
-end process counter;
+end process contador;
 
-proceso1: process(estado_presente)
-variable tmp : unsigned(3 downto 0):="0000";
+
+proceso1: process(estado_presente,HAB1,counter)
 begin
+	
 	case estado_presente is
 		when INICIAL =>
 			if(HAB1='1')then
@@ -63,31 +82,30 @@ begin
 			else
 				estado_futuro<=INICIAL;
 			end if;
+
+
 		when ESPERO2 =>
+
 			if(counter=periodo_clks)then
 				estado_futuro<=ENVIAR;
 			else
 				estado_futuro<=ESPERO2;
 			end if;
+
+
 		when ENVIAR =>
-			LETRACLAVE<=;
-			ADDRESS<=;
-			if(aux="1101")then
-				ULTIMADIRECCION<='1';
-			else
-				ULTIMADIRECCION<='0';
-			end if;
-			if(aux="1110")then
+			LETRACLAVE<= CLAVE(indice_clave);
+			ADDRESS<=address_s;
+			if(address_s="0000")then
 				estado_futuro<=INICIAL;
-				aux:="0000";				
 			else
 				estado_futuro<=ESPERO2;
-				aux:=aux+1;
 			end if;
 	end case;
+
 end process proceso1;
 
-proceso2: process(clk,estado_futuro)
+proceso2: process(clk,estado_futuro,RESET1)
 begin
 	if(RESET1='1')then
 		estado_presente<=INICIAL;
