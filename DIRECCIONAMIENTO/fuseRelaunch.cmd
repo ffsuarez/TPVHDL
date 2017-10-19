@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/workdirectory/DIRECCIONAMIENTO/DIRECCIONAMIENTO_TB_isim_beh.exe" -prj "D:/workdirectory/DIRECCIONAMIENTO/DIRECCIONAMIENTO_TB_beh.prj" "work.DIRECCIONAMIENTO_TB" 

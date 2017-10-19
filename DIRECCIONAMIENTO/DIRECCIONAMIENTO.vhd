@@ -33,7 +33,7 @@ signal counter : unsigned (1 downto 0);
 constant periodo_clks : unsigned (1 downto 0) :="10";
 
 signal address_s : std_logic_vector(3 downto 0);
-signal indice_clave : integer;
+signal indice_clave : integer range -15 to 15;
 
 type tipo_estado is (INICIAL,ESPERO2,ENVIAR);
 signal estado_presente,estado_futuro : tipo_estado;
@@ -107,9 +107,7 @@ end process proceso1;
 
 proceso2: process(clk,estado_futuro,RESET1)
 begin
-	if(RESET1='1')then
-		estado_presente<=INICIAL;
-	elsif(clk'event and clk='1')then
+	if(clk'event and clk='1')then		
 		estado_presente<=estado_futuro;
 	end if;
 end process proceso2;

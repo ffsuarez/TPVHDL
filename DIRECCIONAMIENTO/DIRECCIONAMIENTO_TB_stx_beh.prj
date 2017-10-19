@@ -1,0 +1,2 @@
+vhdl isim_temp "DIRECCIONAMIENTO.vhd"
+vhdl isim_temp "DIRECCIONAMIENTO_TB.vhd"
